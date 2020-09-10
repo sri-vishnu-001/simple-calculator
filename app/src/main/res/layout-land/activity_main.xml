@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter a value"
+        android:layout_weight="1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter second value"
+        android:layout_weight="1"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="  RESULT COMES HERE"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Addition"
+        android:onClick="Addition"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtraction"
+        android:layout_weight="1"
+        android:onClick="Subtraction"/>
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Multiplication"
+        android:onClick="multiplication"/>
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Division"
+        android:onClick="Division"/>
+
+</LinearLayout>
